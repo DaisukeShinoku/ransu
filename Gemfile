@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 ruby "3.3.3"
@@ -46,6 +48,10 @@ group :development, :test do
 end
 
 group :development do
+  gem "rubocop", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
